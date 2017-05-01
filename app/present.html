@@ -11,22 +11,28 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
+    <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
     <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/present.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker" rel="stylesheet">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <link rel="stylesheet" href="styles/present.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker" rel="stylesheet">
+    <style>
+        #section3 {
+        background-image: url(images/Sabrina02.jpg);
+        padding: 6% 0 0 0;
+        background-size: cover;
+        }
+    </style>
   </head>
-  <body>
+  <body class="thunder">
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -39,58 +45,76 @@
       </ul>
 
         <div class="section" id="section1">
+          <div class="spacer"></div>
           <h2>Present Day</h2>
         </div>
 
         <div class="section" id="section2">
+          <div class="container">
           <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
+            <div class="col m12">
+            <div class="card-panel grey darken-4">
             <h3>"All the Gothic Horror and Human Sacrifice a Teen Romance Needs"</h3>
-          </div>
-          <div class="col-md-1"></div>
-          </div>
-          <div class="spacer2"></div>
-          <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-6">
-            <div class="jumbotron">
-              <p>Today, Sabrina has taken a more mature turn in the entertainment scene. A new horror comic series named Afterlife With Archie left readers wanting more of the raw power that is the character of Sabrina. She soon gained her own series because of this.</p>
             </div>
-              <!--<div class="panel panel-default">
-              <div class="panel-body">
-              <p></p>
-              </div>
-              </div>-->
+            </div>
           </div>
-          <div class="col-md-4">
-            <img src="images/Sabrina01.jpg" class="img-thumbnail">
+
+        <div class="row">
+        <div class="col m12">
+          <div class="card" id="a1">
+            <div class="card-image">
+              <img src="images/Sabrina_02-0.jpg">
+              <span class="card-title">The Chilling Adventures of Sabrina</span>
+            </div>
+            <div class="card-content grey">
+              <p>Today, Sabrina has taken a more mature turn in the entertainment scene. A new horror comic series named Afterlife With Archie left readers wanting more of the raw power that is the character of Sabrina. She soon earned her own series because of this.</p>
+            </div>
           </div>
-          <div class="col-md-1"></div>
-          </div>
+        </div>
+      </div>
+            
+      </div>
         </div>
 
         <div class="section" id="section3">
-          <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-4">
+          <div class="container">
+            <div class="row">
             <div class="spacer"></div>
-            <img src="images/Sabrina02.jpg" class="img-thumbnail">
-          </div>
-          <div class="col-md-6">
-            <div class="jumbotron">
-              <p>The Chilling Adventures of Sabrina arrived in 2014, which showcased the origin story of the character. It is set in the 1960s, and begins with her being given away to her aunts at birth. She fights one main villain named  Being a horror genre, it is the most graphic depiction of Sabrina’s adventures.</p>
+            <div class="col m4"></div>
+            <div class="col m8">
+            <div class="card-panel black" id="a3">
+            <p class="grey-text">The Chilling Adventures of Sabrina arrived in 2014, which showcased the origin story of the character. It is set in the 1960s, and begins with Sabrina being given away to her aunts at birth.</p>
             </div>
           </div>
-          <div class="col-md-1"></div>
           </div>
         </div>
+      </div>
         
       
 
         <div class="section" id="section4">
-          <h1>Coming Soon</h1>
+          <canvas id="screen"></canvas>
+          <div class="spacer2"></div>
+          <div class="container">
+          <div class="row">
+          <div class="col m12">
+          <div class="card horizontal" id="a2">
+          <div class="card-image">
+            <img src="images/Sabrina01.jpg">
           </div>
+          <div class="card-stacked">
+          <div class="card-content grey">
+          <h4>Fire Burn, and Cauldron Bubble</h4>
+          <br>
+          <p>Being a horror genre, Chilling Adventures is the most graphic depiction of Sabrina’s adventures. She battles one main villain named Madam Satan.</p>
+          </div>
+          </div>
+          </div>
+
+          </div>
+        </div>
+          </div>
+        </div>
       </div>
 
    
@@ -109,36 +133,202 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/materialize/bin/materialize.js"></script>
+    <script src="/bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="/bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
     <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
     <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
-    <script type="text/javascript">
+    <!-- endbuild -->
+     <script type="text/javascript">
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          sectionsColor: ['#1a1a1a', '#1a1a1a', '#1a1a1a', '#1a1a1a'],
-          continuousVertical: true
+        verticalCentered: false,
+        css3:false,
+        continuousVertical: true,
+        onLeave: function(index, nextIndex, direction){
+          if (index == 1) {
+            $('#a1').addClass('animated flash');
+            $('#a3').addClass('animated swing infinite');
+          }
+          if (index == 2) {
+            $('#a1').removeClass('animated flash flash');
+          }
+          if (index == 3) {
+            $('#a1').addClass('animated flash');
+            $('#a2').addClass('animated slideInDown');
+          }
+      }
       });
       });
 
+      function Color(min) {
+    min = min || 0;
+    this.r = colorValue(min);
+    this.g = colorValue(min);
+    this.b = colorValue(min);
+    this.style = createColorStyle(this.r, this.g, this.b);
+};
+
+function colorValue(min) {
+   return Math.floor(Math.random() * 255 + min);
+}
+
+function createColorStyle(r,g,b) {
+    return 'rgba(' + r + ',' + g + ',' + b + ', 1)'; // originally, this alpha was 0.8
+}
+
+// Dist function
+function d2Dist(p1, p2){
+    var dx = p1.px - p2.px;
+    var dy = p1.py - p2.py;
+    return Math.sqrt(dx*dx + dy*dy);
+}
+
+function Controller(){
+    var self = this;
+    self.canvas = document.getElementById("screen");
+    self.ctx = self.canvas.getContext('2d');
+
+    self.drawCurve = function(control, p1, p2, radius){
+        var ctx = self.ctx;
+        ctx.beginPath();
+        ctx.moveTo(p1.px, p1.py);
+        ctx.arcTo(control.px, control.py, p2.px, p2.py, radius);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = self.color.style;
+        ctx.stroke();
+    }
+
+    self.drawLine = function(control, p){
+        var ctx = self.ctx;
+        ctx.beginPath();
+        ctx.moveTo(control.px, control.py);
+        ctx.lineTo(p.px, p.py);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = self.color.style;
+        ctx.stroke();
+    }
+
+    self.drawNext = function(part){
+        part.func(part.control, part.p1, part.p2, part.radius);
+    }
+
+    self.drawPart = function(){
+        if(self.objectsToDraw.length > 0){
+            self.lastRequestId = requestAnimationFrame(function(){
+                self.drawNext(self.objectsToDraw.shift());
+                self.drawPart();
+                // self.color = new Color(64); // Uncomment to a colorful web!
+            });
+        }
+    }
+
+    self.shuffleArray = function(target){
+        var auxArray = [];
+        while(target.length > 0){
+            auxArray.push(target.shift());
+        }
+
+        while(auxArray.length > 0){
+            var n = Math.floor(Math.random() * auxArray.length);
+            for(var i = 0; i < n; i++){
+                auxArray.push(auxArray.shift());
+            }
+            var x = auxArray.shift();
+            //if(Math.random() * 100 >= 30){    // uncomment those (and line 134) to make a flawed web
+                target.push(x);
+            //}                                 // uncomment those (and line 134) to make a flawed web
+        }
+    }
+
+    self.drawWebByParts = function(){
+        self.ctx.clearRect(0, 0, self.screenWidth, self.screenHeight);
+        var controlPoint = {px: self.screenWidth / 2, py: self.screenHeight / 2};
+        var outerRadius = Math.min(self.screenWidth / 2, self.screenHeight / 2) + 300;
+
+        var nLines = 18;
+        var deltaAngle = 360 / nLines;
+        var degree = Math.PI / 180;
+
+        var points = [];
+        for(var i = 0; i < nLines; i++){
+            points.push({
+                px: controlPoint.px + outerRadius * Math.cos(i * deltaAngle * degree),
+                py: controlPoint.py + outerRadius * Math.sin(i * deltaAngle * degree)
+            });
+        }
+
+        var linesToDraw = [];
+        for(var i = 0; i < points.length; i++){
+            linesToDraw.push({
+                control: controlPoint,
+                p1: points[i],
+                func: self.drawLine
+            });
+        }
+        
+        // self.shuffleArray(linesToDraw); // shuffle lines drawn
+
+        var nArcs = 18;
+        var dist = d2Dist(points[0], points[1]) / 2;
+        var deltaRadius = dist / nArcs;
+
+        var arcsToDraw = [];
+        for(var j = 1; j <= nArcs; j++){
+            for(var i = 0; i < points.length; i++){
+                var p1 = points[i % points.length];
+                var p2 = points[(i+1) % points.length];
+              
+                arcsToDraw.push({
+                    control: controlPoint,
+                    p1: p1,
+                    p2: p2,
+                    radius: Math.random()*dist,
+                    func: self.drawCurve
+                });
+            }
+        }
+        // self.shuffleArray(arcsToDraw); // shuffle arcs order
+
+        self.objectsToDraw = [];
+        while(linesToDraw.length > 0){
+            self.objectsToDraw.push(linesToDraw.shift());
+        }
+
+        while(arcsToDraw.length > 0){
+            self.objectsToDraw.push(arcsToDraw.shift());
+        }
+
+        self.drawPart();
+    }
+
+    self.resize = function(){
+        self.screenWidth = window.innerWidth;
+        self.screenHeight = window.innerHeight;
+
+        self.canvas.width = self.screenWidth;
+        self.canvas.height = self.screenHeight;
+        
+        window.cancelAnimationFrame(self.lastRequestId);
+        self.drawWebByParts();
+    }
+
+    self.init = function(){
+        window.onresize = self.resize;
+        self.color = new Color(64); // Change this value to see a colorful Web
+        self.resize();
+    }
+}
+
+var controller = new Controller();
+controller.init();
     </script>
     </script>
-    <!-- endbuild -->
   </body>
 </html>

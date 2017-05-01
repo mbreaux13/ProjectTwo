@@ -23,6 +23,8 @@ ol,ul {
     list-style: none;
     margin:0;
     padding:0;
+    font-family: 'Montserrat', sans-serif;
+
 }
 caption,th {
     text-align: left;
@@ -59,12 +61,22 @@ h3 {
   font-size: 3em;
 }
 h4 {
+  font-family: 'Shrikhand', cursive;
   font-size: 2em;
 }
 p{
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
+
+span {
+  font-size: 18px;
+}
+
+.card-content ul {
+  font-size: 25px;
+}
+
 .section{
   text-align: center;
 }
@@ -78,26 +90,24 @@ p{
 #menu li {
   display:inline-block;
   margin: 10px;
-  color: #000;
+  color:#990000;
   background:#fff;
-  background: rgba(255,255,255, 0.5);
-  -webkit-border-radius: 10px;
-            border-radius: 10px;
+  background: rgba(255,255,255);
+  font-family: 'Shrikhand', cursive;
 }
 #menu li.active{
-  background:#666;
-  background: rgba(0,0,0, 0.5);
+  background: #f57c00;
   color: #fff;
 }
 #menu li a{
   text-decoration:none;
-  color: #000;
+  color:#990000;
 }
 #menu li.active a:hover{
-  color: #000;
+  color: #990000;
 }
 #menu li:hover{
-  background: rgba(255,255,255, 0.8);
+  background: rgba(255,255,255);
 }
 #menu li a,
 #menu li.active a{
@@ -116,11 +126,6 @@ p{
   width: 100%;
   padding: 0;
   margin:0;
-}
-
-.panel-body {
-  background-color: white;
-  opacity: 0.8;
 }
 
   #myVideo{
@@ -168,12 +173,16 @@ video::-webkit-media-controls {
     display:none !important;
   }
 
-.spacer {
-  padding-top: 100px;
+.spacer1 {
+  padding-top: 300px;
 }
 
 .spacer2 {
-  padding-top: 50px;
+  padding-top: 150px;
+}
+
+.spacer3 {
+  padding-top: 400px;
 }
 
 .small {
@@ -186,4 +195,36 @@ video::-webkit-media-controls {
   font-size: 20px;
 }
 
+#section3, #section5 {
+  background-color: #ffff80;
+}
 
+  .section{
+    
+  }
+
+.gif {
+  height: 345px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-color: #FFE0AF;
+  background-image:
+  linear-gradient(45deg, #FFDD88 25%, transparent 25%, transparent 75%, #FFDD88 75%, #FFDD88), 
+  linear-gradient(45deg, #FFDD88 25%, transparent 25%, transparent 75%, #FFDD88 75%, #FFDD88),
+  linear-gradient(45deg, transparent, transparent 50%, #FFC87F 50%, #FFC87F);
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px, 50px 0px;
+  -webkit-animation: scroll 5s linear infinite;
+}
+
+@-webkit-keyframes scroll {
+  from { background-position: 0 0, 50px 50px, 50px 0; }
+  to { background-position: -100px -100px, -50px -50px, -50px -100px; }
+}

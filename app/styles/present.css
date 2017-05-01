@@ -57,11 +57,16 @@ h3 {
   font-size: 3em;
 }
 h4 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 2em;
 }
 p{
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  color: #bfbfbf;
+}
+span {
+  font-family: 'Permanent Marker', cursive;
 }
 .section{
   text-align: center;
@@ -80,7 +85,8 @@ p{
   background:#fff;
   background: rgba(255,255,255, 0.5);
   -webkit-border-radius: 10px;
-            border-radius: 10px;
+  border-radius: 10px;
+  font-family: 'Permanent Marker', cursive;
 }
 #menu li.active{
   background:#666;
@@ -93,9 +99,16 @@ p{
 }
 #menu li.active a:hover{
   color: #000;
+  text-decoration:line-through;
+  -webkit-animation: rattle .1s infinite linear;
+  animation: rattle .1s infinite linear;
 }
 #menu li:hover{
   background: rgba(255,255,255, 0.8);
+  text-decoration:line-through;
+  -webkit-animation: rattle .1s infinite linear;
+  animation: rattle .1s infinite linear;
+
 }
 #menu li a,
 #menu li.active a{
@@ -117,20 +130,96 @@ p{
 }
 
 .spacer {
-  padding-top: 100px;
+  padding-top: 300px;
 }
 
 .spacer2 {
-  padding-top: 50px;
+  padding-top: 200px;
 }
 
-.small {
-  height: 50px;
-  width: 50px;
+.stretch {
+  height: 350px;
 }
 
-.small2 {
-  font-size: 20px;
+body {
+
+  background-color: #262626;
+
+}
+
+body:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0);
+  z-index: 1;
+  -webkit-animation: thunder-bg 6s infinite;
+          animation: thunder-bg 6s infinite;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#canvas3 {
+  z-index: 5;
+}
+
+#canvas2 {
+  z-index: 10;
+}
+
+#canvas1 {
+  z-index: 100;
+}
+
+@-webkit-keyframes thunder-bg {
+  0% {
+    background-color: rgba(34, 34, 34, .3);
+  }
+  9% {
+    background-color: rgba(34, 34, 34, .1);
+  }
+  10% {
+    background-color: rgba(59, 59, 59, .3);
+  }
+  10.5% {
+    background-color: rgba(34, 34, 34, .1);
+  }
+  80% {
+    background-color: rgba(34, 34, 34, .5);
+  }
+  82% {
+    background-color: rgba(59, 59, 59, .5);
+  }
+  83% {
+    background-color: rgba(34, 34, 34, .4);
+  }
+  83.5% {
+    background-color: rgba(59, 59, 59, .1);
+  }
+  100% {
+    background-color: rgba(34, 34, 34, .3);
+  }
 }
 
 
+.swing {
+    -webkit-animation-name: swing;
+    animation-name: swing;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+canvas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
